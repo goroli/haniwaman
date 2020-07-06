@@ -1,0 +1,11 @@
+/* utility */
+.inner {
+  max-width: 100%;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+
+.title {
+@include title;
+}

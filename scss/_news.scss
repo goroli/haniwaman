@@ -1,0 +1,43 @@
+.news {
+  @include padding(8rem, 5%);
+  .news__list {
+    width: 100%;
+    margin: 0 auto;
+    &__info{
+      display: block;
+      padding: 1.6rem 0;
+      border-bottom: 1px solid #000;
+      .news__list__label,.news__list__data{
+        white-space: nowrap;
+      }
+      .news__list__label {
+        
+        padding: 1rem 0;
+      }
+    }
+}
+}
+
+/* tb */
+/* pc */
+@media (min-width:960px){
+  .news {
+    .news__list {
+      width: 838px;
+      &__info {
+        display: flex;
+        align-items: center;
+        padding: 1.6rem 0;
+        .news__list__label {
+          padding: 0.8rem 1.8rem;
+          border-radius: 6px;
+          margin: 0 3rem;
+          background-color: #666;
+          color: $color-light;
+
+        }
+      }
+    }
+  }
+}
+

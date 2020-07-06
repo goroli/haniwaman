@@ -1,0 +1,51 @@
+
+/* showcase */
+.showcase {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/showcase.jpg')
+  no-repeat center center/cover;
+  background-color:rgba(255,255,255,0.3);
+background-blend-mode:screen;
+.showcase__title {
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 2;
+}
+.showcase__txt {
+  font-size: 2.5rem;
+}
+.showcase__btn {
+  @include btn($color-light, $color-main,395px);
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+}
+
+@media (min-width:481px){
+  .showcase {
+    .showcase__title {
+      font-size: 5rem;
+    }
+    .showcase__txt {
+      font-size: 4rem;
+    }
+    .showcase__btn {
+      font-size: 3.8rem;
+    }
+  }
+}
+
+@media (min-width:960px){
+  .showcase {
+    .showcase__title {
+      font-size: 6.8rem;
+    }
+    .showcase__txt {
+      font-size: 3.8rem;
+    }
+  }
+}

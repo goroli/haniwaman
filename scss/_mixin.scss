@@ -1,0 +1,38 @@
+/* mixin */
+@mixin btn($color, $bg, $max-width) {
+  height:83px;
+  width: 90%;
+  max-width: $max-width;
+  border-radius: 5px;
+  color: $color;
+  background: $bg;
+  display: inline-block;
+  text-align: center;
+  line-height: 83px;
+}
+
+@mixin padding($top-bottom, $left-right){
+  padding: $top-bottom $left-right;
+}
+
+@mixin title{
+  font-size: 6rem;
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 8rem;
+  position: relative;
+  color:$color-dark;
+  &:after{
+    content: '';
+    width: 100px;
+    border: 0px;
+    border-bottom: solid 5px $color-main;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+

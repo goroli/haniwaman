@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@import 'var'; // 変数定義
+@import 'mixin'; // 関数定義
+
+@import 'normalize'; // リセット
+@import 'utility'; // 何度も使うスタイル
+
+/* 各セクション */
+@import 'header';
+@import 'showcase';
+@import 'card';
+@import 'news';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
